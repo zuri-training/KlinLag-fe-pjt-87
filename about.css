@@ -14,7 +14,6 @@ header{
     color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
-    font-size: 16px;
     
 }
 
@@ -86,44 +85,76 @@ header a:hover{
   border-bottom-right-radius: 70px 70px;
   height: 400px;
   }
-  @media only screen and (max-width: 800px) {
-    .about {
-      display: flex;
-      flex-direction: column;
-    }
-  }
 .center{
   margin-top: 30px;
   text-align: center;
   }
 
+.container{
+  display: flex;
+  
+}
+@media (max-width: 700px) {
+  .container {
 
+    display: flex;
+    flex-direction: column;
+  }
+  }
 
 h3{
-  margin-top: 50px;
+  margin-top: 100px;
   color: #2BA84A;
 }
-/* *********************SERVICES*********************** */
+.box8 div{
+  color:#00aced;
+  
+}
 
-  .container{
-    display: flex
+.partners-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    font-size: 16px;
+    
   }
-  @media (max-width: 850px) {
-    .container{
-      display: flex;
-      flex-direction: column;
+  .container div {
+    text-align: center;
+    padding: 10px;
+    
+  }
+  .box1{
+    
+    flex:1; 
+    justify-content:space-around;
+    
+     }
+  .box2{
+    flex:1; 
+    
+  }
+  .box3{
+    flex:1; 
+    
+  }
+  .box4{
+  flex:1; 
+  margin: auto;
+  }
+  
+    h3  {
+      margin-top: 150px;
     }
-  }
-  .box2, .box3, .box6, .box7
-   
-  {
-    margin: 20px 60px 0 100px;
-  }
- .start{
-   text-decoration: none;
-   color: green;
-   font-weight:bold;
- }   
+    h4{
+        text-align: center;
+        margin-top: 80px;;
+    }
 
     
     /* ***********************PARTNERS ************************************/
@@ -162,15 +193,11 @@ h3{
     .partner-pictures img{
       margin: 30px;
     }
-    h4{
-      text-align: center;
-      margin-top: 80px;
-  }
-     /* **************PROJECTS ***************************/
+    
     .projects{
     
     display: inline-block;
-    margin-left: 100px;
+    
     
     }
     
@@ -180,7 +207,7 @@ h3{
     }
     
 
-/**************************FOOTER**************************/
+/*8***************88**********FOOTER**************************/
 
 footer{
   
@@ -208,7 +235,7 @@ footer h4{
   margin-left: 55px;
   margin-top: 30px;
 }
-@media (max-width: 850px) {
+@media (max-width: 500px) {
 .row1{
     flex-direction: column;
   }
