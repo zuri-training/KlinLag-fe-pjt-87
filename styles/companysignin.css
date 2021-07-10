@@ -14,7 +14,6 @@ html {
 .mt-10 {
   margin-top: 10rem;
 }
-
 .mt-3 {
   margin-top: 3rem !important;
 }
@@ -27,9 +26,6 @@ html {
 }
 .mr-2 {
   margin-right: 2rem !important;
-}
-.pl-10 {
-  padding-left: 10rem;
 }
 .py-30 {
   padding-top: 15rem;
@@ -77,10 +73,16 @@ body {
 .heading-primary::after {
   content: '';
   display: block;
-  width: 20%;
+  width: 30%;
   height: 0.5rem;
   background-color: #2ba84a;
   margin: 2rem 0 5rem;
+}
+
+.heading-secondary {
+  font-weight: 900;
+  font-size: 4rem;
+  color: #000;
 }
 
 .heading-tertiary {
@@ -137,8 +139,6 @@ body {
 }
 .btn-primary,
 .btn-subscribe,
-.btn-google,
-.btn-facebook,
 .btn-alt {
   color: #fff;
   text-transform: uppercase;
@@ -158,19 +158,6 @@ body {
   color: #2ba84a;
   border-color: #2ba84a;
 }
-.btn-google {
-  background: #fff;
-  color: #db4437;
-  border: 1px solid #db4437;
-  box-shadow: 0px 2px 10px #c4c4c4, inset 0px -1px 0px rgba(14, 14, 44, 0.4);
-}
-.btn-facebook {
-  background: #fff;
-  color: #4267b2;
-  border: 1px solid #4267b2;
-  box-shadow: 0px 2px 10px #c4c4c4, inset 0px -1px 0px rgba(14, 14, 44, 0.4);
-}
-
 .btn-subscribe {
   background: #ffc300;
   border-color: #ffc300;
@@ -182,32 +169,24 @@ body {
 }
 
 /***********************************
-* SIGN UP
+* SIGN IN
 ************************************/
 
-.sign-up,
-.sign-up--image-right {
-  position: relative;
-}
-
-.sign-up--image-right {
-  background-image: url('../assets/signup-image-right.svg');
+.sign-in {
+  background-image: url('../assets/signup-bg.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
+  background-size: 650px;
+  background-position: top;
 }
 
-.push-down {
-  position: absolute;
-  bottom: 30px;
-}
-
-.sign-up__form label:not(.form-check-label) {
+.sign-in__form label:not(.form-check-label) {
   font-family: Nunito, sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: #000;
 }
-.sign-up__form input.form-control {
+.sign-in__form input.form-control {
   border: none;
   border-bottom: 0.2rem solid #c4c4c4;
   border-radius: 0;
@@ -299,6 +278,9 @@ body {
 /* Media Query */
 
 @media screen and (max-width: 36rem) {
+  .heading-primary {
+    font-size: 3rem;
+  }
   .heading-footer {
     margin-top: 2rem;
   }
@@ -319,52 +301,5 @@ body {
 
   .nav.footer-nav-left {
     justify-content: center;
-  }
-}
-
-@media screen and (max-width: 76.8rem) {
-  .auth-group {
-    flex-direction: column;
-  }
-  .sign-up--image-right {
-    background-size: 430px;
-    background-position: center;
-  }
-}
-
-@media screen and (max-width: 36.5rem) {
-  .heading-primary {
-    font-size: 3rem;
-  }
-  .pl-10 {
-    padding-left: 1rem;
-  }
-  .pt-7 {
-    padding-top: 2rem;
-  }
-  .py-7 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .auth-group {
-    flex-direction: column;
-    margin-bottom: 10rem;
-  }
-
-  .auth-group .btn {
-    width: 100%;
-  }
-
-  .social-signup .btn {
-    margin-bottom: 1rem;
-  }
-
-  .sign-up--image-right {
-    background-image: none;
-  }
-
-  .sign-up--image-right div.push-down {
-    flex-direction: column;
   }
 }

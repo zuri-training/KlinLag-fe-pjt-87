@@ -15,8 +15,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
   <!-- custom styles -->
-  <link rel="stylesheet" href="styles/usersignup.css">
-  <title>Klin Lag | Sign Up - User</title>
+  <link rel="stylesheet" href="styles/companysignin.css">
+  <title>Klin Lag | Sign In - Agency</title>
 </head>
 
 <body>
@@ -53,82 +53,46 @@
     </div>
   </nav> 
   
-  <section class="sign-up py-7">
-    <div class="container-fluid">
+  <section class="sign-in py-7">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-7 col-md-7 col-sm-12 pl-10">
-          <h1 class="heading-primary pt-7">Getting Started</h1>
-          <form class="row sign-up__form mb-3" action="">
-            <div class="col-md-6 mb-3">
-              <label for="firstname" class="form-label">First Name</label>
-              <input type="text" class="form-control shadow-none" id="firstname">
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="lastname" class="form-label">Last Name</label>
-              <input type="text" class="form-control shadow-none" id="lastname">
-            </div>
-            <div class="col-md-12 mb-3">
-              <label for="Phone" class="form-label">Phone</label>
-              <input type="text" class="form-control shadow-none" id="Phone">
-            </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 d-none d-lg-block"></div>
 
-            <div class="col-md-12 mb-3">
-              <label for="user-email" class="form-label">Email</label>
-              <input type="email" class="form-control shadow-none" id="user-email">
+        <div class="col-lg-6  col-md-12 col-sm-12 px-7">
+          <h1 class="heading-primary pt-7">Welcome Back</h1>
+          <form class="sign-in__form mb-3" action="">
+            <div class="mb-3">
+              <label for="company-email" class="form-label">Company Email</label>
+              <input type="email" class="form-control shadow-none" id="company-email" placeholder="john@example.com">
             </div>
-
-            <div class="row mb-3">
-              <div class="col-lg-6 col-md-12 col-sm-12">
-                <label for="password" class="form-label">Password</label>
-                <div class="input-group">
-                  <input type="password" id="password" class="form-control shadow-none" aria-label="Password">
-                  <span class="input-group-text"><img src="assets/eye.svg" alt="hide"></span>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-12 col-sm-12">
-                <label for="confirm" class="form-label">Confirm Password</label>
-                <div class="input-group">
-                  <input type="password" id="confirm" class="form-control shadow-none" aria-label="Confirm Password">
-                  <span class="input-group-text"><img src="assets/eye.svg" alt="hide"></span>
-                </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <div class="input-group">
+                <input type="password" id="password" class="form-control shadow-none" placeholder="Password" aria-label="Password">
+                <span class="input-group-text"><img src="assets/eye.svg" alt="hide"></span>
               </div>
             </div>
-
-            <div class="row mb-3">
-              <div class="col-12">
-                <div class="form-check d-flex align-items-center">
-                  <input class="form-check-input" type="checkbox" id="gridCheck">
-                  <label class="form-check-label" for="agreement">
-                    I agree to KLIN LAG’s <span class="text-primary">Terms &amp; Condition</span> and <span class="text-primary">Privacy Policy</span>
-                  </label>
-                </div>
-              </div>
-            </div>
-
             <div class="row">
-              <div class="col-md-12">
-                <div class="auth-group d-flex justify-content-between align-items-center">
-                  <button type="button" class="btn btn-primary btn-lg px-5">Sign Up</button>
-                  <p class="heading-tertiary">OR</p>
-                  <div class="social-signup">
-                    <button type="button" class="btn btn-google btn-lg me-4">Google</button>
-                    <button type="button" class="btn btn-facebook btn-lg">Facebook</button>
-                  </div>
-                </div>
+              <div class="col-lg-6 col-md-12 col-sm-12"></div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <button type="button" class="btn btn-alt btn-lg px-5">Sign In</button>
               </div>
-            
             </div>
           </form>
-        </div> <!-- end col-7 -->
 
-        <div class="col-lg-5 col-md-5 col-sm-12 sign-up--image-right">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 d-flex align-items-center justify-content-around push-down">
-              <h4 class="heading-tertiary">Already have an account?</h4>
-              <button type="button" class="btn btn-alt btn-lg px-5">Sign In</button>
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-4">
+              <h4 class="heading-tertiary">Not yet a member?</h4>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-8">
+              <button type="button" class="btn btn-primary btn-lg px-5">Sign Up</button>
             </div>
           </div>
-        </div> <!-- end col-5 -->
+         </div> <!-- end col-4 -->
+
+
+
+        <div class="col-lg-3 col-md-3 col-sm-12 d-none d-lg-block"></div>
       </div>
     </div>
   </section>
