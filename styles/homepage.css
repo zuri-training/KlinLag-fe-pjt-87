@@ -240,6 +240,21 @@ body {
   align-items: center;
 }
 
+.image-box__image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.image-box__title {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
 .what-goes-where {
   /* background-color: rgba(196, 196, 196, 0.3); */
   background-color: #fdf4db;
