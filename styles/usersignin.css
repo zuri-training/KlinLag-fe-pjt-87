@@ -28,8 +28,8 @@ html {
 .mr-2 {
   margin-right: 2rem !important;
 }
-.pl-10 {
-  padding-left: 10rem;
+.pr-10 {
+  padding-right: 10rem;
 }
 .py-30 {
   padding-top: 15rem;
@@ -185,13 +185,13 @@ body {
 * SIGN UP
 ************************************/
 
-.sign-up,
-.sign-up--image-right {
+.sign-in,
+.sign-in--image-left {
   position: relative;
 }
 
-.sign-up--image-right {
-  background-image: url('../assets/signup-image-right.svg');
+.sign-in--image-left {
+  background-image: url('../assets/signin-image-left.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -201,13 +201,13 @@ body {
   bottom: 30px;
 }
 
-.sign-up__form label:not(.form-check-label) {
+.sign-in__form label:not(.form-check-label) {
   font-family: Nunito, sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: #000;
 }
-.sign-up__form input.form-control {
+.sign-in__form input.form-control {
   border: none;
   border-bottom: 0.2rem solid #c4c4c4;
   border-radius: 0;
@@ -232,6 +232,33 @@ body {
   width: 2rem;
   height: 2rem;
   margin-right: 1rem;
+}
+
+/***********************************
+* CHECKBOX CHECK
+************************************/
+
+.form-check.form-switch {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.form-check-label {
+  margin-right: 3rem;
+}
+.form-cehck-input {
+  margin-right: 0;
+}
+.form-check-input:checked {
+  background-color: #2ba84a;
+  border-color: #2ba84a;
+}
+
+.form-switch .form-check-input:checked {
+  background-image: url('../assets/circle.svg') !important;
+}
+
+.form-check-input:checked[type='checkbox'] {
+  background-image: url('../assets/check.svg') !important;
 }
 
 /***********************************
@@ -332,9 +359,26 @@ body {
   }
 }
 
+@media screen and (max-width: 76.8rem) {
+  .sign-in--image-left {
+    background-size: 430px;
+    background-position: center;
+  }
+  .pr-10 {
+    padding-right: 4rem;
+  }
+}
+
 @media screen and (max-width: 36.5rem) {
   .heading-primary {
     font-size: 3rem;
+  }
+  .pr-10 {
+    padding-right: 1rem;
+  }
+  .px-5 {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
   }
   .pl-10 {
     padding-left: 1rem;
@@ -349,7 +393,7 @@ body {
 
   .auth-group {
     flex-direction: column;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
   }
 
   .auth-group .btn {
@@ -360,7 +404,7 @@ body {
     margin-bottom: 1rem;
   }
 
-  .sign-up--image-right {
+  .sign-up--image-left {
     background-image: none;
   }
 
