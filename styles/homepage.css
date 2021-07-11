@@ -48,6 +48,26 @@ html {
   padding-top: 7rem;
 }
 
+.btn-yellow{ 
+  background: #EFBD09;
+  border-radius: 10px;
+  color: #fff;
+  width: 377px;
+  height: 56px;
+  padding: 5px 10px;
+  margin: 20px auto;
+}
+.btn-bleu{ 
+  background: #76A9DF;
+  border-radius: 10px;
+  color: #fff;
+  width: 377px;
+  height: 56px;
+  padding: 5px 10px;
+  margin: 10px auto;
+}
+
+
 /***********************************
 * TYPOGRAPHY
 ************************************/
@@ -314,4 +334,7 @@ body {
 
 .footer-nav-secondary a {
   color: #828282;
+}
+.text-nunito{
+  font-family: Nunito, sans-serif;
 }
