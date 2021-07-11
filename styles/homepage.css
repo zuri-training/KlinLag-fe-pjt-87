@@ -347,6 +347,14 @@ body {
 .footer-nav-secondary a {
   color: #828282;
 }
+@media screen and (max-width:400px) {
+  .btn-yellow, .btn-bleu {
+    width: 280px;
+    height: 56px;
+    padding: 5px 20px;
+    margin: 15px auto;
+    font-size: 10px;
+}
 
 @media screen and (max-width: 76.8rem) {
   .px-7 {
@@ -463,4 +471,6 @@ body {
   .heading-footer {
     margin-top: 2rem;
   }
+}
+
 }
